@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>fullPage.js演示</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<style>
+.section { text-align: center; font: 20px "Microsoft Yahei"; color: #fff;}	
+.section1 { background: url(images/11.jpg);background-size:100% 100%;}
+.section2 { background: url(images/22.jpg);background-size:100% 100%;}
+.section3 { background: url(images/33.jpg);background-size:100% 100%;}
+.section4 { background: url(images/44.jpg);background-size:100% 100%;}
+.section5 { background: url(images/55.jpg);background-size:100% 100%;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+	$(function(){
+		$('#dowebok').fullpage({
+		 continuousVertical: true
+		});
+		setInterval(function(){
+	        $.fn.fullpage.moveSectionDown();
+	    }, 3000);
+	});
+	
+</script>
+</head>
+
+<body>
+
+<div id="dowebok">
+	<div class="section section1"><h1>第一屏</h1></div>
+	<div class="section section2"><h1>第二屏</h1></div>
+	<div class="section section3"><h1>第三屏</h1></div>
+	<div class="section section4"><h1>第四屏</h1></div>
+	<div class="section section5"><h1>第五屏</h1></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<a href="http://www.dowebok.com/" style="display: none;">dowebok</a>
+<a href="http://www.dowebok.com/77.html" style="display: none;">jQuery全屏滚动插件fullPage.js</a>
+
+</body>
+</html>
